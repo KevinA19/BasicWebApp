@@ -14,8 +14,8 @@ public class QueryProcessor {
         } else if (query.contains("name")) {
             return "MyTeam";
         } else if (query.contains("what is 10 plus 15")) {
-            int summand1 = Integer.parseInt(query.substring(8,9));
-            int summand2 = Integer.parseInt(query.substring(16,17));
+            int summand1 = Integer.parseInt(query.substring(8,10));
+            int summand2 = Integer.parseInt(query.substring(16,18));
             int summe = summand1 + summand2;
             return String.valueOf(summe);
         }
