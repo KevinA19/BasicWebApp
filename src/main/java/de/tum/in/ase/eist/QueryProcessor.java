@@ -13,7 +13,7 @@ public class QueryProcessor {
                     "writer in the English language and the world's pre-eminent dramatist.";
         } else if (query.contains("name")) {
             return "MyTeam";
-        } else if (query.contains("what is 10 plus 15")) {
+        } else if (query.contains("what is")) {
             int summand1 = Integer.parseInt(query.substring(8,10));
             int summand2 = Integer.parseInt(query.substring(16,18));
             int summe = summand1 + summand2;
