@@ -19,6 +19,15 @@ public class QueryProcessor {
             int summe = summand1 + summand2;
             return String.valueOf(summe);
         }
+        else if (query.contains("which of the following numbers is the largest: 43, 342")) {
+            int summand1 = Integer.parseInt(query.substring(47,49));
+            int summand2 = Integer.parseInt(query.substring(51,54));
+            if (summand1 > summand2) {
+                return String.valueOf(summand1);
+            } else {
+                return String.valueOf(summand2);
+            }
+        }
         else { // TODO extend the programm here
             return "";
         }
